@@ -8,8 +8,8 @@
   <style>
     :root {
       --black: #000000;
-      --red: #D32F2F;       /* Ein kräftiges Rot */
-      --gold: #FFC107;      /* Ein warmes Gold */
+      --red: #D32F2F;
+      --gold: #FFC107;
       --light-gray: #f5f5f5;
       --text-color: #333;
     }
@@ -35,18 +35,23 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       margin-bottom: 40px;
     }
-    .logo img {
-      max-width: 150px;
-      height: auto;
-      margin-bottom: 20px;
-      border: 3px solid #fff;
-      border-radius: 50%;
-      padding: 5px;
+    .logo {
+      display: inline-block;
       background-color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .logo img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
     }
     h1 {
       font-size: 2.8em;
-      margin: 0;
+      margin: 20px 0 0;
     }
     .slogan {
       font-size: 1.2em;
